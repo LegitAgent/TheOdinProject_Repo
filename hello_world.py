@@ -33,6 +33,8 @@ font = pygame.font.SysFont(None, 48)
 
 clock = pygame.time.Clock()
 
+print("AI generated code")
+
 def draw():
     screen.fill(BLACK)
     pygame.draw.rect(screen, WHITE, left_paddle)
