@@ -5,8 +5,14 @@
         <title> Images and Links </title>
     </head>
     <body> <!-- <a> to link -->
-        <a href="https://www.theodinproject.com/about" target="_blank" rel="noopener">About The Odin Project</a> <!-- target is the command for where the link will open, by def it is self, blank = another tab. rel is the relationship
-        of curr page and link page. noopener prevents editing in the new page. norefferer for not seeingtwhere the visit comes from the other pages -->
-        
+        <a href="https://www.theodinproject.com/about" target="_blank" rel="noopener noreferrer">About The Odin Project</a> 
+        <!-- target is the command for where the link will open, by def it is self, blank = another tab. rel is the relationship
+        of curr page and link page. noopener prevents editing in the new page. norefferer for not seeing where the visit comes from the other pages -->
+        <br>
+        <!-- the ./ just copies the current directory and pastes on whatever is after the slash -->
+        <a href="./pages/about.html"> About </a>    
+        <br>
+        <!-- the alt is for if the img is not loading, this text will replace the image -->
+        <img src="./images/dog.jpg" alt="dog" height="400" width="310">
     </body>
 </html>
