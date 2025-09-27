@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 200px;
+    background-color: blue;
+    border: 5px red;
+    border-style: solid;
+    padding: 10px;
+    text-align: center;
+    font-size: larger;
+}
+
+.container_example {
+    display: flex; /* displays flex */
+    width: 800px auto;
+    height: auto;
+    padding: 100px;
+    margin: 100px auto;
+    border: 10px solid black
+}
+
+/* example commands */
+.container_example {
+    flex-direction: column; /* determines whether or not it will go to the next line or not (inline or block), row by default */
+    justify-content: center; /* determines where the content will be places, center, end etc. The spaces can also be adjusted, with key word space-'whatever' i.e. around, evenly etc. */
+    align-items: center; /* like justify content except in the cross axis */
+    /* flex-wrap: wrap; /* nowrap by default, wraps around if there are too many items in the container */
+    /* align-content: center; /* only works when flex-wrap is set to wrap, just like justify content */
+    gap: 1em; /* add gaps in between items */
+}
+
+.one {
+    font-size: 1.5rem;
+}
+
+.three {
+    flex-grow: 1; /* only works if the flex directions and etc, do not take precedence. Makes it so that this specific attrib will grow bigger and fill the white space higher = higher growth speed */
+    flex-shrink: 5; /* will shrink much faster than other items if minimized */
+    flex-basis: 100px; /* will overwrite whatever kind of width the item used to have */
+    flex: 1; /* acts like flex grow, shrink and basis */
+    /* align-self: auto; overwrites align-items command */
+    order: -1; /* changes the order in the html file, in the case of -1, it will appear first. */
+}
