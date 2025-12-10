@@ -27,20 +27,45 @@ parentdiv.append(h1indiv);
 parentdiv.append(pindiv);
 
 // button stuff
+// Method 1
 function alertFunction() {
   alert("YAY! YOU DID IT!");
 }
+// <button onclick="alertFunction()">CLICK ME BABY</button>
+// on the html file ^^
+
 const btn = document.querySelector("#btn");
 
 // METHOD 3
 btn.addEventListener("click", (e) => {
   e.target.style.color = "blue";
+  alertFunction();
 });
 
-const buttons = document.querySelectorAll("button");
+const buttons = document.querySelectorAll("#container button");
 
 buttons.forEach(button => {
     button.addEventListener("click",() => {
         alert(button.id);
     });
+});
+
+const menu = document.querySelector("#menu");
+
+menu.addEventListener('click', (e) => {
+    let target = e.target;
+    switch(target.id) {
+        case 'cool1':
+            console.log("cool 1");
+            break;
+        case 'cool2':
+            console.log("cool 2");
+            break;
+        case 'cool3':
+            console.log("cool 3");
+            break;
+        case 'ul':
+            console.log("ul");
+            break;
+    }
 });
